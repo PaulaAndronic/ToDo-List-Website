@@ -200,8 +200,8 @@ document.addEventListener('keyup', event => {
     $(document).ready(function(){
       $(list[list.length-1]).click(function(event){
         event.target.classList.toggle('checked');
-        ana = document.getElementById('myUL').querySelectorAll('ul li div.divText');
-        ana[event.target.id-1].classList.toggle('checked2');
+        allDivText = document.getElementById('myUL').querySelectorAll('ul li div.divText');
+        allDivText[event.target.id-1].classList.toggle('checked2');
         z = 0;
         todos.forEach(element => {
           if(event.target.id == element["id"]) {
