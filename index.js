@@ -95,11 +95,12 @@ document.addEventListener('keyup', event => {
     label.setAttribute("id", index);
     label.appendChild(document.createTextNode(''));
       
-    let span3 = document.createElement("SPAN");
-    span3.appendChild(t);
-    label.appendChild(span3);
+    let divText = document.createElement("DIV");
+    divText.classList.add("divText");
+    divText.appendChild(t);
 
     li.appendChild(label);
+    li.appendChild(divText);
 
     if (inputValue === '') {
   
@@ -166,7 +167,6 @@ document.addEventListener('keyup', event => {
         close[i].onclick = function() {
           let div = this.parentElement;
           div.style.display = "none";
-          console.log(close)
           for (let i = 0; i < todos.length; i++) {
             console.log(todos[i].id)
             if (todos[i].id == div.id) {
@@ -200,6 +200,8 @@ document.addEventListener('keyup', event => {
     $(document).ready(function(){
       $(list[list.length-1]).click(function(event){
         event.target.classList.toggle('checked');
+        ana = document.getElementById('myUL').querySelectorAll('ul li div.divText');
+        ana[event.target.id-1].classList.toggle('checked2');
         z = 0;
         todos.forEach(element => {
           if(event.target.id == element["id"]) {

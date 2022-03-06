@@ -84,7 +84,7 @@ textarea:focus, input:focus{
 }
 
 .close{
-    display: block; 
+    display: inline-block; 
     background: none;
     color: #cc9a9a;
     margin-top: 12px;
@@ -228,6 +228,15 @@ ul li label.checked::before {
     text-align: center;
   }
 
+.divText {
+    display: inline-block;
+    margin-top: 2.3vh;
+}
+
+ul li div.checked2 {
+    color:rgb(216, 212, 212);
+    text-decoration: line-through;
+}
 
 .none{
     display: none;
