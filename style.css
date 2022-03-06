@@ -1,0 +1,237 @@
+body{
+    background-color:#f2f2f2;
+}
+
+body p {
+    color: #af2f2f26;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 1.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    margin-left: 50px;
+}
+
+.inputDiv{
+    width: 550px;
+    height: 65px;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -13vh;
+    background-color: white;
+    box-shadow: 0px 0px 2px rgb(201, 199, 199);
+}
+
+::placeholder {
+    color: gray;
+    opacity: 0.35;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.inputDiv input{
+    width: 400px;
+    height: 50px;
+    border: none;
+    margin-top: 1vh;
+    font-size: x-large;
+    opacity: 0.75;
+}
+
+.todoText{
+    font-size: 25px;
+    margin-top: 2vh;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.75;
+    display: inline-block;
+}
+
+
+.round {
+    background-color:#fff;
+    border: 1px solid rgb(226, 224, 224);    
+    height: 29px;
+    width: 29px;
+    border-radius:50%;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.status {
+    width: 550px;
+    height: 40px;
+    border: none;
+    margin-top: 0.1vh;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.301),
+    0 10px 0 -5px white,
+    0 10px 1px -4px rgba(0, 0, 0, 0.301),
+    0 20px 0 -10px white,
+    0 20px 1px -9px rgba(0, 0, 0, 0.301);
+}
+
+
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.close{
+    display: block; 
+    background: none;
+    color: #cc9a9a;
+    margin-top: 12px;
+    position: absolute;
+    left: 460px;
+    cursor: default;
+    font-size: 30px;
+    display: none;
+}
+
+.close:hover{
+    color: #a77272;
+}
+
+.div_status_text1 {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    margin-left: 15px;
+    opacity: 0.65;
+    display: inline-block;
+    margin-top: 11px;
+}
+
+.div_status_text2 {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    margin-left: 100px;
+    opacity: 0.65;
+    background-color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: none;
+}
+
+.div_status_text3 {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    margin-left: 15px;
+    opacity: 0.65;
+    background-color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: none;
+}
+
+.div_box {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    border-color: rgb(160 67 67 / 48%);
+}
+
+
+.div_status_text4 {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    margin-left: 50px;
+    opacity: 0.65;
+    background-color: white;
+    border: 1px solid transparent;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: inline-block;
+}
+
+.div_status_text4:hover {
+    text-decoration: underline;
+}
+
+.chevron_style{
+    font-size:20px; 
+    color:gray; 
+    opacity: 0.1; 
+    margin-right: 15px; 
+    margin-left: 15px;
+}
+
+.chevron_complete{
+    opacity: 0.9;
+    color:gray;
+}
+
+.hide {
+    display: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 24px;
+    width: 550px;
+    height: 60px;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0.1vh;
+    background-color: white;
+    box-shadow: 0px 0px 4px rgb(201, 199, 199);
+    display: flex;
+    position: relative;
+    
+  }
+
+  .todo{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 24px;
+    width: 550px;
+    height: 60px;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0.1vh;
+    background-color: white;
+    box-shadow: 0px 0px 4px rgb(201, 199, 199);
+    display: flex;
+    position: relative;
+  }
+  
+
+ul li label.checked {
+    color:rgb(216, 212, 212);
+    text-decoration: line-through;
+}
+
+  
+  /* Add a "checked" mark when clicked on */
+ul li label.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(86, 189, 166);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 19px;
+    left: 21px;
+    transform: rotate(35deg);
+    height: 17px;
+    width: 7px;
+    text-align: center;
+  }
+
+
+.none{
+    display: none;
+}
