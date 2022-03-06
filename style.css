@@ -79,8 +79,6 @@ span {
     0 20px 1px -9px rgba(0, 0, 0, 0.301);
 }
 
-
-
 textarea:focus, input:focus{
     outline: none;
 }
@@ -138,7 +136,6 @@ textarea:focus, input:focus{
     border-color: rgb(160 67 67 / 48%);
 }
 
-
 .div_status_text4 {
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 14px;
@@ -175,7 +172,7 @@ textarea:focus, input:focus{
 ul {
     margin: 0;
     padding: 0;
-  }
+}
   
   /* Style the list items */
   ul li {
